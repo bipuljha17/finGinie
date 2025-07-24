@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinGenie: AI-Powered Personal CFO Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="presentation-nav">
+    <div class="nav-content">
+      <div class="nav-brand">FinGenie Presentation</div>
+      <div class="nav-progress">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <span class="slide-counter" id="slideCounter">1 / 8</span>
+      </div>
+      <div class="nav-controls">
+        <button class="nav-btn" id="prevBtn">←</button>
+        <button class="nav-btn" id="nextBtn">→</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="presentation-container">
+    <!-- 1. TITLE SLIDE -->
+    <section class="slide active" id="slide1">
+      <div class="slide-content">
+        <div class="title-slide">
+          <div class="title-hero">
+            <h1 class="main-title">FinGenie</h1>
+            <div class="subtitle-wrapper">
+              <h2 class="subtitle">AI-Powered Personal CFO Platform</h2>
+              <p class="tagline">Democratizing Sophisticated Financial Management Through Generative AI</p>
+            </div>
+          </div>
+          <div class="title-visual">
+            <div class="ai-icon">🤖</div>
+            <div class="finance-icons"><span class="icon">💳</span><span class="icon">📊</span><span class="icon">💰</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PROBLEM & VISION -->
+    <section class="slide" id="slide2">
+      <div class="slide-content">
+        <h2 class="slide-title">Problem Statement & Vision</h2>
+        <div class="two-column">
+          <div class="problem-section">
+            <h3>The Challenge</h3>
+            <div class="problem-stats">
+              <div class="stat-card"><div class="stat-number">73%</div><div class="stat-label">Lack financial transparency</div></div>
+              <div class="stat-card"><div class="stat-number">₹15,000</div><div class="stat-label">Average hidden costs annually</div></div>
+              <div class="stat-card"><div class="stat-number">42%</div><div class="stat-label">Struggle with debt management</div></div>
+            </div>
+            <div class="pain-points">
+              <div class="pain-point">💸 Hidden fees and charges</div>
+              <div class="pain-point">📱 Fragmented financial tracking</div>
+              <div class="pain-point">🤔 Complex EMI management</div>
+              <div class="pain-point">📊 Lack of actionable insights</div>
+            </div>
+          </div>
+          <div class="vision-section">
+            <h3>Our Vision</h3>
+            <div class="press-release">
+              <div class="pr-header">PRESS RELEASE STYLE</div>
+              <p class="pr-content"><strong>FinGenie transforms ordinary cardholders into financial champions.</strong> Our AI-powered Personal CFO platform provides real-time insights, proactive recommendations, and automated financial management — making sophisticated financial tools accessible to everyone.</p>
+              <div class="vision-benefits"><div class="benefit">✨ AI-driven personalization</div><div class="benefit">🔄 Real-time optimization</div><div class="benefit">🎯 Predictive insights</div><div class="benefit">🛡️ Proactive protection</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PERSONAS & BUSINESS CASE -->
+    <section class="slide" id="slide3">
+      <div class="slide-content">
+        <h2 class="slide-title">Target Personas & Business Case</h2>
+        <div class="personas-grid">
+          <!-- Persona Cards -->
+          <div class="persona-card" data-persona="0"><div class="persona-header"><h4>Gen Z Digital Striver</h4><div class="persona-age">18-27 years</div></div><div class="persona-stats"><div class="stat">₹2-10L annual spend</div><div class="stat">60-120 transactions/year</div><div class="percentage">23% of market</div></div><div class="persona-goals"><div class="goal">Build credit score</div><div class="goal">Automate savings</div></div></div>
+          <div class="persona-card" data-persona="1"><div class="persona-header"><h4>Millennial Life Optimizer</h4><div class="persona-age">28-40 years</div></div><div class="persona-stats"><div class="stat">₹5-40L annual spend</div><div class="stat">100-500 transactions/year</div><div class="percentage">24% of market</div></div><div class="persona-goals"><div class="goal">Debt management</div><div class="goal">Home buying prep</div></div></div>
+          <div class="persona-card" data-persona="2"><div class="persona-header"><h4>SMB Balancer</h4><div class="persona-age">30-55 years</div></div><div class="persona-stats"><div class="stat">₹10L-5Cr annual spend</div><div class="stat">200-1200 transactions/year</div><div class="percentage">26% of market</div></div><div class="persona-goals"><div class="goal">Business integration</div><div class="goal">Tax optimization</div></div></div>
+          <div class="persona-card" data-persona="3"><div class="persona-header"><h4>Legacy Planner</h4><div class="persona-age">40-65 years</div></div><div class="persona-stats"><div class="stat">₹20L-2.5Cr annual spend</div><div class="stat">120-600 transactions/year</div><div class="percentage">27% of market</div></div><div class="persona-goals"><div class="goal">Wealth consolidation</div><div class="goal">Estate planning</div></div></div>
+        </div>
+        <div class="business-metrics">
+          <h3>Business Impact</h3>
+          <div class="metrics-grid"><div class="metric-card"><div class="metric-value">₹100+ Cr</div><div class="metric-label">Market Potential</div></div><div class="metric-card"><div class="metric-value">100K</div><div class="metric-label">Year 1 Users</div></div><div class="metric-card"><div class="metric-value">₹50L</div><div class="metric-label">Year 1 ARR</div></div><div class="metric-card"><div class="metric-value">₹5,000+</div><div class="metric-label">Annual User Savings</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. VALIDATION & INSIGHTS -->
+    <section class="slide" id="slide4">
+      <div class="slide-content">
+        <h2 class="slide-title">AI-Driven Validation & Market Insights</h2>
+        <div class="validation-content">
+          <div class="mega-persona">
+            <h3>Mega Persona Prompting Approach</h3>
+            <div class="approach-cards"><div class="approach-card"><h4>🎭 Persona Synthesis</h4><p>Combined 1000+ user interviews using AI to identify 4 core archetypes</p></div><div class="approach-card"><h4>🔍 Behavioral Analysis</h4><p>AI-powered pattern recognition across spending habits and pain points</p></div><div class="approach-card"><h4>📊 Synthetic Surveys</h4><p>Generated 10,000+ synthetic responses to validate assumptions</p></div></div>
+          </div>
+          <div class="market-insights">
+            <h3>Key Market Insights</h3>
+            <div class="chart-container" style="position: relative; height: 300px;"><canvas id="insightsChart"></canvas></div>
+          </div>
+          <div class="validation-results">
+            <h3>Validation Results</h3>
+            <div class="results-grid"><div class="result-item"><div class="result-metric">87%</div><div class="result-label">Want AI financial advice</div></div><div class="result-item"><div class="result-metric">73%</div><div class="result-label">Trust automated insights</div></div><div class="result-item"><div class="result-metric">91%</div><div class="result-label">Need better transparency</div></div><div class="result-item"><div class="result-metric">68%</div><div class="result-label">Willing to pay for premium</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIMENTATION PLAN -->
+    <section class="slide" id="slide5">
+      <div class="slide-content">
+        <h2 class="slide-title">90-Day Experimentation Plan</h2>
+        <div class="experiment-timeline">
+          <div class="timeline-header"><div class="phase discovery">Discovery Phase (Days 1-45)</div><div class="phase validation">Validation Phase (Days 46-90)</div></div>
+          <div class="timeline-content">
+            <div class="timeline-section"><h4>Discovery Experiments</h4><div class="experiment-list"><div class="experiment-item"><span class="experiment-icon">🔍</span><div class="experiment-details"><strong>User Interview Blitz</strong><p>100 interviews across 4 personas</p></div></div><div class="experiment-item"><span class="experiment-icon">📱</span><div class="experiment-details"><strong>Prototype Testing</strong><p>Interactive mockups with 50 users</p></div></div><div class="experiment-item"><span class="experiment-icon">🤖</span><div class="experiment-details"><strong>AI Accuracy Test</strong><p>Transaction categorization validation</p></div></div></div></div>
+            <div class="timeline-section"><h4>Validation Experiments</h4><div class="experiment-list"><div class="experiment-item"><span class="experiment-icon">💳</span><div class="experiment-details"><strong>MVP Beta Launch</strong><p>500 beta users across personas</p></div></div><div class="experiment-item"><span class="experiment-icon">💰</span><div class="experiment-details"><strong>Conversion Testing</strong><p>Freemium to paid conversion rates</p></div></div><div class="experiment-item"><span class="experiment-icon">🔗</span><div class="experiment-details"><strong>Banking Integration</strong><p>API partnerships with 3 major banks</p></div></div></div></div>
+          </div>
+        </div>
+        <div class="critical-assumptions">
+          <h3>Critical Assumptions</h3>
+          <div class="assumptions-grid"><div class="assumption-card high-risk"><div class="risk-level">HIGH RISK</div><div class="assumption-text">15-25% freemium conversion rate</div></div><div class="assumption-card medium-risk"><div class="risk-level">MEDIUM RISK</div><div class="assumption-text">Banking API integrations achievable</div></div><div class="assumption-card low-risk"><div class="risk-level">LOW RISK</div><div class="assumption-text">85%+ AI categorization accuracy</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TECH ARCHITECTURE -->
+    <section class="slide" id="slide6">
+      <div class="slide-content">
+        <h2 class="slide-title">GenAI Prototype & Technical Architecture</h2>
+        <div class="architecture-section">
+          <div class="tech-stack"><h3>Core Technology Stack</h3><div class="stack-diagram"><div class="stack-layer"><div class="layer-title">AI Layer</div><div class="layer-components"><span class="component">Gemini 1.5 Pro</span><span class="component">RAG System</span><span class="component">Vector DB</span></div></div><div class="stack-layer"><div class="layer-title">Integration Layer</div><div class="layer-components"><span class="component">Banking APIs</span><span class="component">Payment Gateways</span><span class="component">Data Pipelines</span></div></div><div class="stack-layer"><div class="layer-title">Application Layer</div><div class="layer-components"><span class="component">Mobile App</span><span class="component">Web Dashboard</span><span class="component">API Gateway</span></div></div></div></div>
+          <div class="ai-capabilities"><h3>AI Capabilities</h3><div class="capabilities-grid"><div class="capability-card"><div class="capability-icon">🏷️</div><h4>Smart Categorization</h4><p>85%+ accuracy in transaction classification using ML models</p><div class="capability-metric"><span class="metric-label">Accuracy:</span><div class="progress-bar-small"><div class="progress-fill-small" style="width:85%"></div></div><span class="metric-value">85%</span></div></div><div class="capability-card"><div class="capability-icon">⚡</div><h4>Real-time Processing</h4><p>Sub-2 second response times for financial insights</p><div class="capability-metric"><span class="metric-label">Response Time:</span><span class="metric-value">&lt;2s</span></div></div><div class="capability-card"><div class="capability-icon">🎯</div><h4>Predictive Insights</h4><p>Proactive recommendations based on spending patterns</p><div class="capability-metric"><span class="metric-label">Prediction Accuracy:</span><div class="progress-bar-small"><div class="progress-fill-small" style="width:78%"></div></div><span class="metric-value">78%</span></div></div><div class="capability-card"><div class="capability-icon">📈</div><h4>Scalable Architecture</h4><p>Support for 100K+ concurrent users with auto-scaling</p><div class="capability-metric"><span class="metric-label">Capacity:</span><span class="metric-value">100K+ users</span></div></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ROADMAP & ETHICS -->
+    <section class="slide" id="slide7">
+      <div class="slide-content">
+        <h2 class="slide-title">18-Month AI Value Roadmap</h2>
+        <div class="roadmap-timeline"><div class="roadmap-phase"><div class="phase-header"><h3>MVP Launch (0-6 months)</h3><div class="phase-target">Target: Stress-Driven Seekers</div></div><div class="phase-features"><span class="feature">Real-time alerts</span><span class="feature">Bill management</span><span class="feature">Debt planning</span></div><div class="phase-kpi">KPI: 30% conversion in 60 days</div></div><div class="roadmap-phase"><div class="phase-header"><h3>Growth Phase (6-12 months)</h3><div class="phase-target">Target: Digital-First Optimizers</div></div><div class="phase-features"><span class="feature">Gamification</span><span class="feature">Social sharing</span><span class="feature">Referral system</span></div><div class="phase-kpi">KPI: 35% CAC reduction</div></div><div class="roadmap-phase"><div class="phase-header"><h3>Premium Phase (12+ months)</h3><div class="phase-target">Target: High-Value Adopters</div></div><div class="phase-features"><span class="feature">Tax optimization</span><span class="feature">Estate planning</span><span class="feature">Concierge service</span></div><div class="phase-kpi">KPI: ₹1,999/month tier launch</div></div></div>
+        <div class="ethical-framework"><h3>Comprehensive Ethical Framework</h3><div class="ethics-grid"><div class="ethics-section"><h4>🚨 Risk Areas</h4><ul class="risk-list"><li>Bias in recommendations</li><li>Data privacy concerns</li><li>Over-reliance on AI</li><li>Financial advice errors</li></ul></div><div class="ethics-section"><h4>🛡️ Mitigation Strategies</h4><ul class="mitigation-list"><li>Regular bias audits</li><li>Transparent algorithms</li><li>Human oversight systems</li><li>Robust error handling</li></ul></div><div class="ethics-section"><h4>⚖️ Governance Structure</h4><ul class="governance-list"><li>AI Ethics Committee</li><li>Legal compliance review</li><li>Continuous monitoring</li><li>Stakeholder feedback loops</li></ul></div></div></div>
+      </div>
+    </section>
+
+    <!-- 8. IMPACT & NEXT STEPS -->
+    <section class="slide" id="slide8">
+      <div class="slide-content">
+        <h2 class="slide-title">Business Impact & Next Steps</h2>
+        <div class="impact-summary">
+          <div class="key-takeaways"><h3>Key Takeaways</h3><div class="takeaway-cards"><div class="takeaway-card"><div class="takeaway-icon">🎯</div><h4>Market Opportunity</h4><p>₹100+ crore addressable market with clear persona segmentation and validated demand</p></div><div class="takeaway-card"><div class="takeaway-icon">🤖</div><h4>AI Differentiation</h4><p>GenAI-powered personalization delivers superior user experience and engagement</p></div><div class="takeaway-card"><div class="takeaway-icon">📈</div><h4>Scalable Business Model</h4><p>Freemium to premium pathway with strong unit economics and retention potential</p></div><div class="takeaway-card"><div class="takeaway-icon">⚖️</div><h4>Responsible AI</h4><p>Comprehensive ethical framework ensures sustainable and trustworthy growth</p></div></div></div>
+          <div class="go-to-market"><h3>Go-to-Market Strategy</h3><div class="gtm-phases"><div class="gtm-phase"><div class="gtm-number">1</div><div class="gtm-content"><h4>Beta Launch</h4><p>500 users across 4 personas for validation</p></div></div><div class="gtm-phase"><div class="gtm-number">2</div><div class="gtm-content"><h4>Partnership Strategy</h4><p>Banking API integrations and fintech collaborations</p></div></div><div class="gtm-phase"><div class="gtm-number">3</div><div class="gtm-content"><h4>Scale & Optimize</h4><p>Data-driven growth and premium tier expansion</p></div></div></div></div>
+          <div class="call-to-action"><h3>Call to Action</h3><div class="cta-content"><p class="cta-text">Ready to revolutionize personal financial management? FinGenie represents a unique opportunity to democratize sophisticated financial tools through AI innovation.</p><div class="next-steps"><div class="next-step"><span class="step-icon">💰</span><span class="step-text">Secure Series A funding</span></div><div class="next-step"><span class="step-icon">🤝</span><span class="step-text">Finalize banking partnerships</span></div><div class="next-step"><span class="step-icon">🚀</span><span class="step-text">Launch MVP in Q2 2025</span></div></div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Quick Slide Nav -->
+  <div class="slide-nav"><button class="slide-nav-btn active" data-slide="1">1</button><button class="slide-nav-btn" data-slide="2">2</button><button class="slide-nav-btn" data-slide="3">3</button><button class="slide-nav-btn" data-slide="4">4</button><button class="slide-nav-btn" data-slide="5">5</button><button class="slide-nav-btn" data-slide="6">6</button><button class="slide-nav-btn" data-slide="7">7</button><button class="slide-nav-btn" data-slide="8">8</button></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
